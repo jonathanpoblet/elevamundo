@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles/register.css">
+    <title>Registro</title>
+</head>
+<body>
+    <main class="main-register">
+        <section class="main-register-section">
+            <img class="main-register-section-img" src="./img/logo.png" alt="Logo">
+
+            <h1 class="main-register-section-title">
+                Web de repuestos
+            </h1>
+
+            <h1 class="main-register-section-subtitle">
+                Registrarse
+            </h1>
+
+            <div class="main-register-section-container">
+                <input id="register-name" class="main-register-section-container-input" type="text" placeholder="Nombre / Razón Social" />
+            </div>
+
+            <div class="main-register-section-container">
+                <input id="register-cuit" class="main-register-section-container-input" type="text" placeholder="CUIT / CUIL" />
+            </div>
+
+            <div class="main-register-section-container">
+                <select id="register-type" class="main-register-section-container-select" style="opacity: 80%;">
+                    <option value="">--- Seleccionar Tipo de Cliente ---</option>
+                    <option value="Particular">Particular</option>
+                    <option value="Empresa">Empresa</option>
+                    <option value="Gremio">Gremio</option>
+                </select>
+            </div>
+
+            <div class="main-register-section-container">
+                <input id="register-email" class="main-register-section-container-input" type="email" placeholder="Email" />
+            </div>
+
+            <div class="main-register-section-container">
+                <input id="register-password" class="main-register-section-container-input-password" type="password" placeholder="Contraseña" />
+                <i id="register-eye-icon" class="bi bi-eye-fill main-register-section-container-logo"></i>
+            </div>
+
+            <button id="register-button" class="main-register-section-button" type="button">
+                Crear Cuenta
+            </button>
+
+            <p class="main-register-section-signup">
+                Tienes cuenta? <a class="main-register-section-signup-link" href="./login.html">Iniciar sesión</a>
+            </p>
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./scripts/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <main class="main-login">
+        <section class="main-login-section">
+            <img class="main-login-section-img" src="./img/logo.png" alt="Logo">
+
+            <h1 class="main-login-section-title">
+                Web de repuestos
+            </h1>
+
+            <h1 class="main-login-section-subtitle">
+                Iniciar sesión
+            </h1>
+
+            <div class="main-login-section-container">
+                <input id="login-email" class="main-login-section-container-input" type="email" placeholder="Email" />
+            </div>
+
+            <div class="main-login-section-container">
+                <input id="login-password" class="main-login-section-container-input-password" type="password" placeholder="Contraseña" />
+                <i id="login-eye-icon" class="bi bi-eye-fill main-login-section-container-logo"></i>
+            </div>
+
+            <button id="login-button" class="main-login-section-button" type="button">
+                Iniciar Sesión
+            </button>
+
+            <p class="main-login-section-signup">
+                No tienes cuenta? <a class="main-login-section-signup-link" href="./registro.html">Registrate</a>
+            </p>
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./scripts/login.js"></script>
+</body>
+</html>
