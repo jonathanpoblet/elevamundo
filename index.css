@@ -7,8 +7,8 @@
 
 .navbar {
     padding: 10px 30px;
-    /* border-bottom: 2px solid rgb(235, 235, 235);
-    box-shadow: 2px 2px 10px 2px rgb(241, 241, 241); */
+    border-bottom: 2px solid rgb(235, 235, 235);
+    box-shadow: 2px 2px 10px 2px rgb(241, 241, 241);
 }
 
 .navbar-logo {
@@ -70,7 +70,7 @@
 
 
 
-
+/* Main */
 .main {
     display: flex;
     flex-direction: column;
@@ -86,10 +86,6 @@
     margin-bottom: 60px;
 }
 
-
-
-
-
 .main-phrase {
     display: flex;
     flex-direction: column;
@@ -99,23 +95,14 @@
     background-color: #FFD326;
     padding: 20px;
     box-shadow: 2px 2px 10px 2px rgb(223, 223, 223);
+    margin-top: 200px;
 }
 
 .main-phrase p {
     margin-bottom: 0px;
     font-size: 18px;
+    text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .main-presentation {
     display: flex;
@@ -132,7 +119,71 @@
 
 .main-presentation-img {
     width: 380px;
-    margin-left: 30px;
+    margin-left: 50px;
     border-radius: 5px;
     box-shadow: 2px 2px 10px 2px rgb(199, 199, 199);
+}
+
+@media screen and (max-width: 1200px) {
+    .main-phrase p {
+        font-size: 16px;
+        padding: 0px 40px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .main-title h1 {
+        margin-top: 50px;
+        font-size: 35px;
+    }
+
+    .main-presentation-text {
+        font-size: 16px;
+    }
+
+    .main-presentation-img {
+        width: 300px;
+    }
+
+    .main-phrase {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .main-presentation {
+        flex-direction: column;
+        align-items: center;
+        max-width: 70%;
+    }
+
+    .main-presentation-img {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .main-presentation-text {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .main-phrase p {
+        font-size: 14px;
+        padding: 0px 40px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .main-title h1 {
+        font-size: 30px;
+    }
+    .main-presentation-text {
+        font-size: 15px;
+    }
+
+    .main-presentation-img {
+        width: 100%;
+    }
 }
